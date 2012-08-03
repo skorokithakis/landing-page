@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title%}Your amazing landing page{% endblock %}</title>
+    </head>
+
+    <body>
+        {% include 'includes/flash_message.html' %}
+        <p>Hello! Enter your email below to sign up.</p>
+        <form action="{{ url_for('index') }}" method="post" accept-charset="utf-8">
+                {{ form.hidden_tag() }}
+                <div class="control-label">{{ form.email.label }}</div>
+                <div class="controls">
+                    {{ form.email|safe }}
+                    {% if form.email.errors %}
+                    <ul class="errors">
+                        {% for error in form.email.errors %}
+                        <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+                <input type="submit" value="Sign up" />
+        </form>
+    </body>
+</html>
+

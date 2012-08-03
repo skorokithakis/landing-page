@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Signup list</title>
+    </head>
+
+    <body>
+        <ul>
+            {% for signup in signups %}
+                <li>{{ signup.email }}</li>
+            {% else %}
+                <li>No signups yet.</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
