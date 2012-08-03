@@ -1,5 +1,5 @@
-Flask on AppEngine landing page app
-===================================
+AppEngine landing page app
+==========================
 
 Boilerplate project template for hosting a simple landing page on Google App Engine, created shamelessly using
 https://github.com/kamalgill/flask-appengine-template/.
