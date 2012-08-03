@@ -24,7 +24,7 @@ To preview the application using App Engine's development server,
 use [dev_appserver.py][devserver]
 
 <pre class="console">
-  dev\_appserver.py .
+  dev_appserver.py .
 </pre>
 
 Assuming the latest App Engine SDK is installed, the test environment is
